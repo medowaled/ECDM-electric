@@ -9,6 +9,6 @@ function loadHTML(elementId, url) {
 
 // Load the header and footer
 document.addEventListener("DOMContentLoaded", () => {
-  loadHTML("header", "header.html");
+  // loadHTML("header", "header.html");
   loadHTML("footer", "common/footer.html");
 });
