@@ -432,25 +432,126 @@ body {
   margin: 0;
 }
 
+/* تنسيق عام للفورم مع تأثير الزجاج */
 .contact-form {
-  background: var(--white);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
   padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.form-group {
+/* عنوان الفورم */
+.contact-form h2 {
+  font-size: 28px;
   margin-bottom: 20px;
+  color: #080808;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-.form-control {
-  height: 50px;
-  border: 1px solid #ddd;
-  padding: 10px 20px;
+/* تنسيق الحقول */
+.field {
+  position: relative;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
-textarea.form-control {
-  height: auto;
+.field label {
+  font-weight: bold;
+  color: #000000;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+/* إدخال البيانات مع تأثيرات متحركة */
+.field input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.1);
+  color: #000000;
+  outline: none;
+}
+
+/* تأثير عند التركيز على الإدخال */
+.field input:focus {
+  border-color: #00d4ff;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.8);
+}
+
+/* زر الإرسال */
+#button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+/* تأثيرات على زر الإرسال */
+#button:hover {
+  background: linear-gradient(135deg, #0072ff, #004494);
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.5);
+}
+
+#button:active {
+  transform: scale(0.98);
+}
+
+/* تحسين تجربة المستخدم على الهواتف */
+@media (max-width: 600px) {
+  .contact-form {
+    padding: 30px;
+  }
+}
+
+/* أيقونات للحقول */
+.field input {
+  padding-left: 40px;
+}
+
+.field::before {
+  content: "✉️";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.field:nth-child(2)::before {
+  content: "📛";
+}
+
+.field:nth-child(3)::before {
+  content: "📞";
+}
+
+.field:nth-child(4)::before {
+  content: "💬";
+}
+
+.field:nth-child(5)::before {
+  content: "📧";
 }
 
 /* Footer Styles */
@@ -1065,7 +1166,7 @@ textarea.form-control {
     padding: 20px;
     margin-top: 15px;
     border-radius: 4px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgb(60, 118, 204);
     text-align: center;
   }
 
