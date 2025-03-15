@@ -7,11 +7,6 @@
   --dark: #1a237e;
 }
 
-body {
-  font-family: "Arial", sans-serif;
-  line-height: 1.6;
-  margin-top: 80px;
-}
 
 /* Navbar Styles */
 .navbar {
@@ -882,7 +877,7 @@ body {
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
-.product-image-Low {
+.product-image {
   position: relative;
   padding-top: 20%;
   overflow: hidden;
