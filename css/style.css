@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 /* Global Styles */
 :root {
   --primary-color: #1e88e5;
@@ -9,6 +11,7 @@
 
 body {
   overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Navbar Styles */
@@ -35,7 +38,7 @@ body {
 }
 
 .navbar-brand img {
-  height: 45px;
+  height: 80px;
   transition: transform 0.3s ease;
 }
 
@@ -1364,6 +1367,13 @@ body {
   object-fit: cover;
 }
 
+@media only screen and (max-width: 600px) {
+  .client-card img {
+    width: 220px !important;
+    height: 80%;
+  }
+}
+
 .client-card h3 {
   color: #333;
   font-size: 1.4rem;
@@ -2267,7 +2277,7 @@ body {
 }
 
 .client-card img {
-  max-width: 120px;
+  /* max-width: 120px; */
   margin-bottom: 15px;
   border-radius: 4px;
 }
