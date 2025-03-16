@@ -7,6 +7,9 @@
   --dark: #1a237e;
 }
 
+body {
+  overflow-x: hidden;
+}
 
 /* Navbar Styles */
 .navbar {
