@@ -122,8 +122,40 @@ footer.footer {
 
 .social-links a i {
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #fff;
+}
+
+.social-links a:hover .fa-facebook-f {
+  background: linear-gradient(to bottom, #1877f2, #0d5ab9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.social-links a:hover .fa-twitter {
+  background: linear-gradient(to bottom, #1da1f2, #0c85d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.social-links a:hover .fa-linkedin-in {
+  background: linear-gradient(to bottom, #0077b5, #005582);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.social-links a:hover .fa-instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .social-links a:hover {
@@ -2754,19 +2786,31 @@ footer.footer {
 }
 
 .social-icon:hover .fa-facebook-f {
-  color: #1877f2 !important;
+  background: linear-gradient(to bottom, #1877f2, #0d5ab9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .social-icon:hover .fa-twitter {
-  color: #1da1f2 !important;
+  background: linear-gradient(to bottom, #1da1f2, #0c85d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .social-icon:hover .fa-linkedin-in {
-  color: #0077b5 !important;
+  background: linear-gradient(to bottom, #0077b5, #005582);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .social-icon:hover .fa-instagram {
-  color: #e4405f !important;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 @media (max-width: 991px) {
