@@ -2904,6 +2904,9 @@ footer.footer {
   margin-bottom: 30px;
   display: flex;
   align-items: flex-start;
+  background: transparent;
+  box-shadow: none;
+  border: none;
 }
 
 .info-item i {
@@ -2937,6 +2940,10 @@ footer.footer {
 
 .location-item {
   margin-bottom: 15px;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  padding: 0;
 }
 
 .location-item h3 {
