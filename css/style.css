@@ -2702,11 +2702,7 @@ footer.footer {
   margin-bottom: 15px;
 }
 
-.footer {
-  background: #00a8e1;
-  color: var(--white);
-  padding: 60px 0 30px;
-}
+
 
 .footer p {
   color: rgba(255, 255, 255, 0.7);
