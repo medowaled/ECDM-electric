@@ -2914,6 +2914,8 @@ footer.footer {
   font-size: 24px;
   margin-right: 15px;
   margin-top: 5px;
+  width: 24px;
+  text-align: center;
 }
 
 .info-item h3 {
