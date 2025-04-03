@@ -94,14 +94,18 @@ const heroSwiper = new Swiper('.hero-slider', {
     },
 });
 
-// Load Navbar
+// Load Navbar and Footer
 $(document).ready(function() {
+    // Load Navbar
     $('#navbar-placeholder').load('components/navbar.html', function() {
         // Mobile Menu
         document.querySelector('.navbar-toggler').addEventListener('click', function() {
             this.classList.toggle('active');
         });
     });
+    
+    // Load Footer
+    $('#footer').load('common/footer.html');
 });
 
 // Smooth scroll for anchor links
