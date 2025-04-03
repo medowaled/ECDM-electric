@@ -760,90 +760,109 @@
     <!-- Contact Section -->
     <section class="contact-section">
       <div class="container">
-        <div class="row">
-          <!-- Contact Information -->
-          <div class="col-lg-4">
-            <div class="contact-info" data-aos="fade-right">
-             
+        <div class="contact-container">
+          <!-- Left Side - Contact Form -->
+          <div class="contact-form-side">
+            <h2>Send Your Message</h2>
+            <form id="contact-form">
+              <div class="field">
+                <input type="text" name="name" id="name" placeholder="Your Name" required />
+              </div>
+              <div class="field">
+                <input type="email" name="email" id="email" placeholder="Your Email" required />
+              </div>
+              <div class="field">
+                <input type="tel" name="phone" id="phone" placeholder="Phone" required />
+              </div>
+              <div class="field">
+                <input type="text" name="department" id="department" placeholder="Department" required />
+              </div>
+              <div class="field">
+                <select id="select-department" name="select-department" required>
+                  <option value="">Choose Department</option>
+                  <option value="sales">Sales</option>
+                  <option value="support">Support</option>
+                  <option value="technical">Technical</option>
+                </select>
+              </div>
+              <div class="field">
+                <textarea id="message" name="message" placeholder="Your Question" rows="4" required></textarea>
+              </div>
+              <button type="submit" id="button">Submit</button>
+            </form>
+          </div>
+
+          <!-- Right Side - Contact Info -->
+          <div class="contact-info-side">
+            <!-- Info Items -->
+            <div class="info-grid">
+              <!-- Support -->
               <div class="info-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <div class="location-grid">
-                  <div class="location-item">
-                    <h3>Egypt</h3>
-                    <p>45 Kambez, Nadi Al Saeed, beside business Hive, Dokki, Giza</p>
-                  </div>
-                  <div class="location-item">
-                    <h3>Saudi Arabia</h3>
-                    <p>No.3035 Al Muhandisin Al Aziziyah Dist., Jeddah</p>
-                  </div>
+                <div class="icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info-content">
+                  <h4>Support</h4>
+                  <p>info@ecdmeg.com</p>
                 </div>
               </div>
 
+              <!-- Phone -->
               <div class="info-item">
-                <i class="fas fa-phone"></i>
-                <div>
-                  <h3>Phone</h3>
-                  <h4>Egypt</h4>
-                  <p>tel:+2-011-0131-4700</p>
-                  <p>Fax:+2-02-2763-3305</p>
-                  <h4>Saudi Arabia</h4>
-                  <p>Tel: +966 566007503</p>
-                  <p>Fax: +966 566007503</p>
+                <div class="icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="info-content">
+                  <h4>Phone</h4>
+                  <p>+20 122 2755 664</p>
                 </div>
               </div>
 
+              <!-- Office Address -->
               <div class="info-item">
-                <i class="fas fa-envelope"></i>
-                <div>
-                  <h3>Email</h3>
-                  <p>info@ecdm.com</p>
-                  <p>info@ecdm.com</p>
+                <div class="icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="info-content">
+                  <h4>Office Address</h4>
+                  <p>45 Kambez, Nadi Al Saeed, beside business Hive, Dokki, Giza</p>
                 </div>
               </div>
 
+              <!-- Factory Address -->
               <div class="info-item">
-                <i class="fas fa-clock"></i>
-                <div>
-                  <h3>Working Hours</h3>
-                  <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
-                  <p>Saturday: 9:00 AM - 2:00 PM</p>
+                <div class="icon">
+                  <i class="fas fa-industry"></i>
+                </div>
+                <div class="info-content">
+                  <h4>Factory Address</h4>
+                  <p>No.3035 Al Muhandisin Al Aziziyah Dist., Jeddah</p>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Contact Form -->
-          <div class="col-lg-8">
-            <div class="contact-form" data-aos="fade-left">
-              <h2>Send us a Message</h2>
-              <form id="contact-form">
-                <div class="field">
-                  <label for="title">title</label>
-                  <input type="text" name="title" id="title" />
-                </div>
-                <div class="field">
-                  <label for="name">name</label>
-                  <input type="text" name="name" id="name" />
-                </div>
-                <div class="field">
-                  <label for="phone">phone</label>
-                  <input type="text" name="phone" id="phone" />
-                </div>
-                <div class="field">
-                  <label for="message">message</label>
-                  <input type="text" name="message" id="message" />
-                </div>
-                <div class="field">
-                  <label for="email">email</label>
-                  <input type="text" name="email" id="email" />
-                </div>
 
-                <input type="submit" id="button" value="Send Email" />
-              </form>
+            <!-- Maps -->
+            <div class="maps-section">
+              <div class="map-grid">
+                <!-- Office Map -->
+                <div class="map-item">
+                  <h4>Arabtech Office</h4>
+                  <div class="map-frame">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.5989445521513!2d31.199955!3d30.041176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145846d2a0eaf7f7%3A0x2a48b812272e7ed2!2z2YbYp9iv2Yog2KfZhNiz2LnZitivICjYqNiy2YbYsyDZh9in2YjYsyk!5e0!3m2!1sen!2seg!4v1709487590068!5m2!1sen!2seg" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+                <!-- Factory Map -->
+                <div class="map-item">
+                  <h4>Arabtech Factory</h4>
+                  <div class="map-frame">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.5989445521513!2d31.199955!3d30.041176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145846d2a0eaf7f7%3A0x2a48b812272e7ed2!2z2YbYp9iv2Yog2KfZhNiz2LnZitivICjYqNiy2YbYsyDZh9in2YjYsyk!5e0!3m2!1sen!2seg!4v1709487590068!5m2!1sen!2seg" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- </div> -->
     </section>
 
     <!-- Footer -->
