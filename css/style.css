@@ -2775,55 +2775,60 @@ footer.footer {
   border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-
-
-/* Navbar Social Icons */
-.social-icon {
-  color: var(--black);
-  font-size: 20px;
-  width: 40px;
-  height: 40px;
-  display: flex;
+.social-contact a {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+  text-decoration: none;
   transition: all 0.3s ease;
-  margin: 0 5px;
 }
 
-.social-icon:hover {
-  background: #ffffff !important;
-  transform: translateY(-2px);
+.social-contact a i {
+  color: var(--black);
+  font-size: 16px;
+  transition: all 0.3s ease;
 }
 
-.social-icon:hover .fa-facebook-f {
+.social-contact a:hover {
+  background-color: #fff;
+}
+
+.social-contact a:hover .fa-facebook-f {
   background: linear-gradient(to bottom, #1877f2, #0d5ab9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.social-icon:hover .fa-twitter {
+.social-contact a:hover .fa-twitter {
   background: linear-gradient(to bottom, #1da1f2, #0c85d0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.social-icon:hover .fa-linkedin-in {
+.social-contact a:hover .fa-linkedin-in {
   background: linear-gradient(to bottom, #0077b5, #005582);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.social-icon:hover .fa-instagram {
+.social-contact a:hover .fa-instagram {
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+
+
+
 
 @media (max-width: 991px) {
   .social-contact {
