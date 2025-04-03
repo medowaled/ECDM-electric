@@ -817,27 +817,26 @@
               <h2>Send us a Message</h2>
               <form id="contact-form">
                 <div class="field">
-                  <label for="title">title</label>
-                  <input type="text" name="title" id="title" />
+                  <input type="text" name="name" id="name" placeholder="Your Name" />
                 </div>
                 <div class="field">
-                  <label for="name">name</label>
-                  <input type="text" name="name" id="name" />
+                  <input type="email" name="email" id="email" placeholder="Your Email" />
                 </div>
                 <div class="field">
-                  <label for="phone">phone</label>
-                  <input type="text" name="phone" id="phone" />
+                  <input type="tel" name="phone" id="phone" placeholder="Phone" />
                 </div>
                 <div class="field">
-                  <label for="message">message</label>
-                  <input type="text" name="message" id="message" />
+                  <select name="department" id="department">
+                    <option value="" disabled selected>Business Department</option>
+                    <option value="sales">Sales</option>
+                    <option value="support">Support</option>
+                    <option value="technical">Technical</option>
+                  </select>
                 </div>
                 <div class="field">
-                  <label for="email">email</label>
-                  <input type="text" name="email" id="email" />
+                  <textarea name="message" id="message" placeholder="Your Question" rows="4"></textarea>
                 </div>
-
-                <input type="submit" id="button" value="Send Email" />
+                <button type="submit" id="button">Submit</button>
               </form>
             </div>
           </div>
