@@ -3025,33 +3025,6 @@ footer.footer {
   line-height: 1.4;
 }
 
-/* Maps Section */
-.maps-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  margin-top: 30px;
-}
-
-.map-container {
-  background: #fff;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-}
-
-.map-container h3 {
-  padding: 15px 20px;
-  margin: 0;
-  background: #1b3e6d;
-  color: #fff;
-  font-size: 18px;
-}
-
-.map-container iframe {
-  display: block;
-}
-
 @media (max-width: 991px) {
   .form-section,
   .contact-info-section {
@@ -3060,9 +3033,5 @@ footer.footer {
   
   .form-section {
     border-radius: 15px 15px 0 0;
-  }
-  
-  .maps-section {
-    grid-template-columns: 1fr;
   }
 }
