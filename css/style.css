@@ -2858,11 +2858,12 @@ footer.footer {
 .form-section {
   flex: 1;
   padding: 50px;
-  background: linear-gradient(135deg, #1b3e6d, #000);
+  background: linear-gradient(135deg, #ffffff, #e6f3ff);
   border-radius: 15px 0 0 15px;
   min-width: 300px;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .form-section::before {
@@ -2877,7 +2878,7 @@ footer.footer {
 }
 
 .form-section h2 {
-  color: #fff;
+  color: #1b3e6d;
   margin-bottom: 40px;
   font-size: 28px;
   font-weight: 300;
@@ -2907,13 +2908,13 @@ footer.footer {
 .form-group textarea {
   width: 100%;
   padding: 15px 20px;
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid #e0e0e0;
   border-radius: 4px;
-  background: rgba(255, 255, 255, 0.05);
-  color: #fff;
+  background: #ffffff;
+  color: #333;
   font-size: 15px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .form-group input:focus,
@@ -2926,22 +2927,22 @@ footer.footer {
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: rgba(255, 255, 255, 0.5);
+  color: #999;
   font-weight: 300;
   letter-spacing: 1px;
 }
 
 .form-group select {
   appearance: none;
-  background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%231b3e6d" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
   background-repeat: no-repeat;
   background-position: right 15px center;
-  color: rgba(255, 255, 255, 0.7);
+  color: #333;
 }
 
 .form-group select option {
-  background: #1b3e6d;
-  color: #fff;
+  background: #ffffff;
+  color: #333;
   padding: 15px;
 }
 
@@ -3025,6 +3026,37 @@ footer.footer {
   line-height: 1.4;
 }
 
+/* Maps Section */
+.maps-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 30px;
+  padding: 0 50px;
+}
+
+.map-container {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.map-container h3 {
+  padding: 15px 20px;
+  margin: 0;
+  background: #1b3e6d;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.map-container iframe {
+  display: block;
+  width: 100%;
+  border: none;
+}
+
 @media (max-width: 991px) {
   .form-section,
   .contact-info-section {
@@ -3033,5 +3065,10 @@ footer.footer {
   
   .form-section {
     border-radius: 15px 15px 0 0;
+  }
+
+  .maps-section {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
   }
 }
