@@ -99,29 +99,29 @@
           <div class="col-12">
             <div class="contact-form-wrapper">
               <div class="form-section">
-                <h2>Send Your Message</h2>
+                <h2>Send us a Message</h2>
                 <form id="contact-form">
-                  <div class="form-group">
-                    <input type="text" name="name" placeholder="Your Name" required />
+                  <div class="field">
+                    <input type="text" name="name" id="name" placeholder="Your Name" required />
                   </div>
-                  <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email" required />
+                  <div class="field">
+                    <input type="email" name="email" id="email" placeholder="Your Email" required />
                   </div>
-                  <div class="form-group">
-                    <input type="tel" name="phone" placeholder="Phone" required />
+                  <div class="field">
+                    <input type="tel" name="phone" id="phone" placeholder="Phone" required />
                   </div>
-                  <div class="form-group">
-                    <select name="department" required>
-                      <option value="" disabled selected>Choose Department</option>
+                  <div class="field">
+                    <select name="department" id="department" required>
+                      <option value="" disabled selected>Business Department</option>
                       <option value="sales">Sales</option>
                       <option value="support">Support</option>
                       <option value="technical">Technical</option>
                     </select>
                   </div>
-                  <div class="form-group">
-                    <textarea name="message" placeholder="Your Question" rows="4" required></textarea>
+                  <div class="field">
+                    <textarea name="message" id="message" placeholder="Your Question" rows="4" required></textarea>
                   </div>
-                  <button type="submit" class="submit-btn">Submit</button>
+                  <button type="submit" id="button">Submit</button>
                 </form>
               </div>
               <div class="contact-info-section">
