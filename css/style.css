@@ -766,93 +766,34 @@ footer.footer {
 }
 
 /* Contact Info Styling */
-.info-item {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 30px;
-  padding: 25px;
-  background: linear-gradient(145deg, #ffffff, #f5f7fa);
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(27, 62, 109, 0.08);
-  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-  border: 1px solid rgba(27, 62, 109, 0.06);
+.contact-item {
+  margin-bottom: 25px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.info-item:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 15px 30px rgba(27, 62, 109, 0.12);
+.contact-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.info-item i {
-  font-size: 24px;
-  color: #2697f3;
-  margin-right: 20px;
-  padding: 15px;
-  background: rgba(38, 151, 243, 0.1);
-  border-radius: 12px;
-  transition: all 0.3s ease;
-}
-
-.info-item:hover i {
-  background: #2697f3;
-  color: white;
-  transform: scale(1.1);
-}
-
-.info-item h3 {
+.contact-item .info h3 {
   color: #1b3e6d;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 8px;
+}
+
+.contact-item .info p {
+  color: #1b3e6d;
+  font-size: 15px;
   margin-bottom: 8px;
-}
-
-.info-item p {
-  color: #64748b;
-  margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-#button:active {
-  transform: scale(0.98);
-}
-
-/* تحسين تجربة المستخدم على الهواتف */
-@media (max-width: 600px) {
-  .contact-form {
-    padding: 30px;
-  }
-}
-
-/* أيقونات للحقول */
-.field input {
-  padding-left: 40px;
-}
-
-.field::before {
-  content: "✉️";
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 18px;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.field:nth-child(2)::before {
-  content: "📛";
-}
-
-.field:nth-child(3)::before {
-  content: "📞";
-}
-
-.field:nth-child(4)::before {
-  content: "💬";
-}
-
-.field:nth-child(5)::before {
-  content: "📧";
+  line-height: 1.5;
 }
 
 /* Footer Styles */
