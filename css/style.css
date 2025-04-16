@@ -690,17 +690,20 @@ footer.footer {
 .field input::placeholder,
 .field select::placeholder,
 .field textarea::placeholder {
-  color: #a0aec0;
+  color: #1b3e6d;
+  opacity: 0.7;
   font-weight: 400;
   font-size: 15px;
 }
 
 .field select {
   appearance: none;
-  background-image: url('data:image/svg+xml;utf8,<svg fill="%231b3e6d" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231b3e6d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
   background-repeat: no-repeat;
-  background-position: right 15px center;
-  padding-right: 45px;
+  background-position: right 1rem center;
+  background-size: 1em;
+  background-color: #ffffff;
+  color: #1b3e6d;
   cursor: pointer;
 }
 
@@ -3076,7 +3079,8 @@ footer.footer {
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   font-size: 16px;
-  color: #333;
+  color: #1b3e6d;
+  background: #ffffff;
   transition: all 0.3s ease;
 }
 
